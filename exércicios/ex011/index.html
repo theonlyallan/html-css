@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivo diferentes ou simplesmente aumente o diminua o tamnho do seu nevegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/tamanho-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/tamanho-m.png" type="image/png">
+        <img src="imagens/tamanho-g.png" alt="imagem flexivel">
+
+   </picture>
+   <h1>Reproduzindo aúdios</h1>
+   <p>Vamos aprender a reproduzir aúdios em HTML5</p>
+   <audio preload="metadata" autoplay controls loop>
+    <source src="midia/bensound-goinghigher.mp3" type="audio/npeg">
+    <source src="midia/bensound-goinghigher.ogg" type="audio/ogg">
+    <source src="midia/bensound-goinghigher.nav" type="audio/nav">
+    <p>Seu navegador não possibilita reproduzir tal aúdio, <a href="midia/bensound-goinghigher.mp3">Clique aqui para abaixar o aúdio!</a></p>
+   </audio>
+   
+</body>
+</html>
