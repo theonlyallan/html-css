@@ -4,20 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            height: 100vh;
-            background-color: black;
+             height: 100vh;
+           /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            /* Shorthand - background 
+            color > image > position >  repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,7 +36,7 @@
 
 <body>
     <main>
-        <h1>Teste de imagem de fundi</h1>
+        <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio doloremque vel incidunt dignissimos
             deleniti expedita, quibusdam ratione sunt cumque asperiores iste in vero minus sint soluta cum, hic earum.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi, non cumque ea tempora adipisci?
