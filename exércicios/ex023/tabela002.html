@@ -18,6 +18,7 @@
             background-color: rgba(0, 128, 0, 0.622);
             font-size: 1.5em;
             border: 1px solid black;
+            position: relative;
         }
 
         td, th {
@@ -40,13 +41,19 @@
             margin: auto;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         tbody > tr:nth-child(odd) { /* 2n-1 */
             background-color: rgba(211, 211, 211, 0.492);
             font-weight: bold;
         }
 
         tbody > tr:nth-child(even) {
-            background-color: lightgreen;
+            background-color: rgba(144, 238, 144, 0.557);
             text-decoration: underline;
         }
         td.num {
