@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício de Tabelas</title>
     <style>
-      body {
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -29,19 +30,47 @@
         .destaque {
             background-color: yellow;
         }
+
+        col.cnome {
+            background-color: yellow;
+        }
+
+        col.csexo {
+            background-color: greenyellow;
+        }
+
+        col.cgrupo {
+            background-color: rgba(0, 0, 255, 0.715);
+        }
+
+        col.cprof {
+            background-color: rebeccapurple;
+        }
+
+        caption {
+            background: green;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
     </style>
 </head>
+
 <body>
     <h1>Exercício de Tabelas</h1>
 
     <table>
         <colgroup>
-            <col class="">
-            <col class="">
-            <col class="">
-            <col class="">
-        </colgroup>
-        <caption>Cadastro</caption>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo" span="2">
+
+            <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
             <th scope="col">Sexo</th>
@@ -85,6 +114,7 @@
             <td>Engenheiro</td>
         </tr>
     </table>
-    
+
 </body>
+
 </html>
