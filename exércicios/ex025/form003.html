@@ -5,33 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #forms {
+            background-color: green;
+            padding: 20px;
+            width: 500px;
+            height: 500px;
+            background-position: -25%;
+            margin: auto;
+        }
+
+        h1:hover {
+            background-color: red;
+            color: aqua;
+            transition: 0.8s;
+        }
+
+        input {
+            background-color: rgba(0, 0, 0, 0.653);
+            color: white;
+            height: 30px;
+        }
+
+        #ienviar,
+        #ilimpar {
+            background-color: yellow;
+            color: black;
+            height: 70px;
+            width: 100px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" minlength="10" placeholder="nome completo"
-                autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
-        </p>
-      <label for="imes">Período Letivo</label>
-      <input type="month" name="mes" id="imes" value="2023-11">
-      <p>
-        <label for="idia">Dia da Prova</label>
-        <input type="date" name="dia" id="idia" value="2023-11-06">
-      </p>
-      <label for="ihora">Horário da Prova</label>
-      <input type="time" name="hora" id="ihora">
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <div id="forms">
+        <h1>Teste de formulário</h1>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" minlength="10"
+                    placeholder="nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5"
+                    required>
+            </p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2023-11">
+            <p>
+                <label for="idia">Dia da Prova</label>
+                <input type="date" name="dia" id="idia" value="2023-11-06">
+
+            </p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+            <p>
+                <input type="submit" value="Enviar" id="ienviar">
+                <input type="reset" value="Limpar" id="ilimpar">
+            </p>
+        </form>
+    </div>
 
 
 </body>
